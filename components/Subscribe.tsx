@@ -49,11 +49,10 @@ export default function Subscribe() {
   return (
     <div className="border border-blue-200 rounded p-6 my-4 w-full dark:border-gray-800 bg-blue-50 dark:bg-blue-opaque">
       <p className="text-lg md:text-xl font-bold text-gray-900 dark:text-gray-100">
-        Subscribe to the newsletter
+        Subscribe to my newsletter
       </p>
       <p className="my-1 text-gray-800 dark:text-gray-200">
-        Get emails from me about web development, tech, and early access to new
-        articles.
+        Get emails from me about what's going on at Telematica and things I'm excited about!
       </p>
       <form className="relative my-4" onSubmit={subscribe}>
         <input
@@ -79,11 +78,11 @@ export default function Subscribe() {
       ) : (
         <p className="text-sm text-gray-800 dark:text-gray-200">
           {`${
-            subscriberCount > 0 ? subscriberCount.toLocaleString() : '-'
+            subscriberCount > 0 ? subscriberCount.toLocaleString() : ' '
           } subscribers – `}
-          <Link href="/newsletter">
+          {/* <Link href="/newsletter">
             <a>35 issues</a>
-          </Link>
+          </Link> */}
         </p>
       )}
     </div>
