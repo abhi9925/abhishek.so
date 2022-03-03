@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 import Container from 'components/Container';
 import avatar from 'public/avatar.jpg';
-import avatarBW from 'public/avatar-bw.jpg';
+
 
 export default function About() {
   return (
@@ -41,7 +41,7 @@ export default function About() {
           </br> - Backed by Y Combinator W22 batch
            </p>
 
-          <h3>Long, 3rd Person</h3>
+          {/* <h3>Long, 3rd Person</h3>
           <p>
             Lee Robinson is the Director of Developer Relations at{' '}
             <a href="http://vercel.com/">Vercel</a>, where he helps developers
@@ -70,33 +70,24 @@ export default function About() {
             Hey, I'm Lee. I lead Developer Relations at{' '}
             <a href="https://vercel.com/">Vercel</a>, where my team helps
             developers build a faster web.
-          </p>
+          </p> */}
           <h3>Education</h3>
           <p>
             Abhishek Jain graduated from BITS Pilani with a BE in
             Computer Science and MSc in Chemistry.
           </p>
-          <h2>Headshots</h2>
-          <div className="flex space-x-8">
-            <a href="/avatar.jpg">
-              <Image
-                alt="Lee Robinson headshot"
-                width={400}
-                quality={100}
-                src={avatar}
-                className="rounded-md"
-              />
-            </a>
-            <a href="/avatar-bw.jpg">
-              <Image
-                alt="Lee Robinson headshot"
-                width={400}
-                quality={100}
-                src={avatarBW}
-                className="rounded-md"
-              />
-            </a>
-          </div>
+            {/* <h2>Headshots</h2>
+            <div className="flex space-x-8">
+              <a href="/avatar.jpg">
+                <Image
+                  alt="Lee Robinson headshot"
+                  width={400}
+                  quality={100}
+                  src={avatar}
+                  className="rounded-md"
+                />
+              </a>
+            </div> */}
         </div>
       </div>
     </Container>

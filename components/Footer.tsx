@@ -57,11 +57,11 @@ export default function Footer() {
               Snippets
             </a>
           </Link> */}
-          <Link href="/tweets">
+          {/* <Link href="/tweets">
             <a className="text-gray-500 hover:text-gray-600 transition">
               Tweets
             </a>
-          </Link>
+          </Link> */}
         </div>
       </div>
     </footer>
